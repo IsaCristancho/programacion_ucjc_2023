@@ -6,7 +6,8 @@ public class Aula {
 	private int numeroClase;
 	private int planta;
 	private Profesor profesor; // Se pasa profesor como un objeto
-	private Alumno [] asientos; //Array de alumnos 
+	private Alumno [] asientos = new Alumno [3]; //Array de alumnos 
+	private int freeSeatsIndex;
 	
 	//Constructor
 	public Aula(int numeroClase, int planta, Profesor profesor, Alumno[] asientos) {
@@ -15,9 +16,10 @@ public class Aula {
 		this.planta = planta;
 		this.profesor = profesor;
 		asientos = new Alumno [3]; // Se establece el tamaño del array
+		this.freeSeatsIndex = 0; //Indice del primer asiento vacio
 	}
 
-	//Metdodo Get y Set
+	//Metodo Get y Set
 	public int getNumeroClase() {
 		return numeroClase;
 	}
@@ -50,12 +52,24 @@ public class Aula {
 		this.asientos = asientos;
 	}
 	
-	
-	
-	
-	
-	
-	
-	
+	public int getFreeSeatsIndex() {
+		return freeSeatsIndex;
+	}
 
+	public void setFreeSeatsIndex(int freeSeatsIndex) {
+		this.freeSeatsIndex = freeSeatsIndex;
+	}
+
+	// Asignar alumno, el primer asiento libre que se tiene
+	public int asignarAlumno(Alumno alumno) {
+		int i = this.getFreeSeatsIndex();
+		if (i<3) {
+			this.asientos[i] = alumno;
+			this.freeSeatsIndex += 1;
+			return 1; //Agrego a un alumno
+		}
+		else {
+			return 0; // No agrego a un alumno porque estaba ocupado
+		}
+	}
 }

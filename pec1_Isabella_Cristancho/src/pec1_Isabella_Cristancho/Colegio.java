@@ -1,5 +1,8 @@
 package pec1_Isabella_Cristancho;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Colegio {
 
 	// Variables de instancia
@@ -14,6 +17,14 @@ public class Colegio {
 		this.nombre = nombre;
 		this.direccion = direccion;
 		aulas = new Aula[numAulas];
+	}
+
+
+	public Colegio() {
+		super();
+		this.nombre = "";
+		this.direccion = "";
+		List<Aula> aulas = new ArrayList<>(); //crear un arreglo de aula que no tiene dimensiones
 	}
 
 
@@ -46,15 +57,20 @@ public class Colegio {
 		this.aulas = aulas;
 	}
 	
-	public void asignSeat (Aula [] aulas, Alumno alumnos) {
-		for (Aula aula : aulas) {
-			for (Aula asientos : aula.getAsientos()) {
-				for (i=0 ; i < asientos.lenght ; i++) {
-					
-				}
+	//Buscar el 1, lo asigna
+	public boolean asignSeat (Alumno alumno) {//Boolean porque va a retornar un true y un false
+		Aula[] aulas = this.getAulas();
 				
-			}
-			
+		for (Aula aula : aulas) {
+			if (aula.asignarAlumno(alumno) == 1) {
+				System.out.println(); //el alumno concatenar dni
+				return true; //El return true interrumpe el for cuando consegui la primera libre
+			} 
+			else {
+				System.out.println(); //en el aula tal no hay asientos disponibles en TAL aula, para que luego recorra la otra aula
+			}	
 		}
+		System.out.println(); //No hay aulaS disponibles  
+		return false;
 	}
 }
