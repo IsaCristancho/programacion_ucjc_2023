@@ -56,5 +56,4 @@ public class UtilsColegio {
 		
 		return alumno; // Devuelve al alumno
 	}
-	//
 }

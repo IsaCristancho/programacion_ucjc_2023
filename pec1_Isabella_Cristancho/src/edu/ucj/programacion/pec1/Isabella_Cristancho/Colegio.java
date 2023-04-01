@@ -9,8 +9,7 @@ public class Colegio {
 	// Variables de instancia
 	private String nombre;
 	private String direccion;
-	private Aula[] aulas; // Array de aulas
-	
+	private Aula[] aulas; // Array de aulas 
 
 	// Constructor
 	public Colegio(String nombre, String direccion, Aula[] aulas, int numAulas) {
@@ -25,7 +24,8 @@ public class Colegio {
 		super();
 		this.nombre = "";
 		this.direccion = "";
-		List<Aula> aulas = new ArrayList<>(); //crear un arreglo de aula que no tiene dimensiones
+		List<Aula> aulas = new ArrayList<>(); // He puesto esto para poder crear un arreglo de aula 
+		// que no tiene dimensiones, ya que es dinamico, he buscado como solucionar ese error en Google y pues funciona.
 	}
 
 
