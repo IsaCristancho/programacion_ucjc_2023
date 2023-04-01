@@ -1,4 +1,9 @@
-package pec1_Isabella_Cristancho;
+package edu.ucj.programacion.pec1.Isabella_Cristancho;
+
+//Creo una clase llamada Persona que va a hacer una Clase Padre.
+//Ya que Alumno y Profesor compraten atributos (nombre, apellidos y DNI)
+//Por lo tanto, la clase Alumno y Profesor van a ser sus clases hijas.
+
 
 //Clase Padre 
 public class Persona {
@@ -8,6 +13,7 @@ public class Persona {
 	private String apellidos;
 	private String dni;
 	
+	//Constructor
 	public Persona(String nombre, String apellidos, String dni) {
 		super();
 		this.nombre = nombre;
@@ -15,6 +21,7 @@ public class Persona {
 		this.dni = dni;
 	}
 
+	//Metodo Get y Set
 	public String getNombre() {
 		return nombre;
 	}

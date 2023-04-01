@@ -1,4 +1,4 @@
-package pec1_Isabella_Cristancho;
+package edu.ucj.programacion.pec1.Isabella_Cristancho;
 
 //Hereda de clase Persona
 public class Profesor extends Persona{
@@ -12,7 +12,7 @@ public class Profesor extends Persona{
 		this.asignatura = asignatura;
 	}
 	
-	//Metodo Get y Set
+	//Metodo Get y Set del atributo especial de Profesor 
 	public String getAsignatura() {
 		return asignatura;
 	}
