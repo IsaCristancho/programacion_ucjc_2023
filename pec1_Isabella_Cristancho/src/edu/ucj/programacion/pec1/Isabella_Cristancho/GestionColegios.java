@@ -73,14 +73,12 @@ public class GestionColegios {
 				System.out.println("En el colegio " +colegio.getNombre()+ " no quedan asientos disponibles en "
 						+ "las aulas."); // Si no se pudo asignar el puesto, pues imprime esto porque ya no hay mas aulas.
 			}
-			
 		}
 	}
 	
 	/* GitHub Isabella Cristancho
-	 * 
+	  
 	 * https://github.com/IsaCristancho/programacion_ucjc_2023.git
-	 * 
-	 */
-	
+	 
+	 */	
 }
