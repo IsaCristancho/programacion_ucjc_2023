@@ -49,8 +49,7 @@ public class UtilsColegio {
 		
 		// Se pide la nota media del alumno y se guarda
 		System.out.print("Indique la nota media del Alumno: ");
-		Float notaMedia = scan.nextFloat();
-		notaMedia = Float.valueOf(scan.nextLine());
+		int notaMedia = scan.nextInt();
 		Alumno alumno = new Alumno(nombreAlumno, apellidosAlumno, dniAlumno, notaMedia);
 		// Llama al unico constructor de alumno en la clase Alumno
 		

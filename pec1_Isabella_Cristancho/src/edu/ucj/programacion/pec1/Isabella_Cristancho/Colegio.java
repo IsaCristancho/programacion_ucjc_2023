@@ -78,7 +78,7 @@ public class Colegio {
 			} 
 			else {
 				System.out.println("En el aula " + aula.getNumeroClase() + " no hay asientos disponibles para " 
-			+ alumno.getNombre()+ " " + alumno.getApellidos()+ "con DNI " + alumno.getDni()); 
+			+ alumno.getNombre()+ " " + alumno.getApellidos()+ " con DNI " + alumno.getDni()); 
 				//Luego recorre la otra aula
 			}	
 		}
