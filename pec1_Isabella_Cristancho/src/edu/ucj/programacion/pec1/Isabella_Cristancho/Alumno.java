@@ -4,10 +4,10 @@ package edu.ucj.programacion.pec1.Isabella_Cristancho;
 public class Alumno extends Persona { 
 	
 	//Variables de instancia
-	private int notaMedia;
+	private float notaMedia;
 
 	//Constructor 
-	public Alumno(String nombre, String apellidos, String dni, int notaMedia) {
+	public Alumno(String nombre, String apellidos, String dni, float notaMedia) {
 		super(nombre, apellidos, dni);
 		this.notaMedia = notaMedia;
 	}
@@ -17,7 +17,7 @@ public class Alumno extends Persona {
 		return notaMedia;
 	}
 
-	public void setNotaMedia(int notaMedia) {
+	public void setNotaMedia(float notaMedia) {
 		this.notaMedia = notaMedia;
 	}
 }

@@ -8,6 +8,7 @@ public class UtilsColegio {
 
 	public static Profesor crearProfesor() {
 		
+		System.out.println("===== Informacion del profesor =====");
 		// Se pide el nombre del profesor y se guarda
 		Scanner scan = new Scanner(System.in);
 		System.out.print("Indique el nombre del Profesor: ");
@@ -49,7 +50,8 @@ public class UtilsColegio {
 		
 		// Se pide la nota media del alumno y se guarda
 		System.out.print("Indique la nota media del Alumno: ");
-		int notaMedia = scan.nextInt();
+		float notaMedia = scan.nextFloat();
+		//System.out.println(notaMedia);
 		Alumno alumno = new Alumno(nombreAlumno, apellidosAlumno, dniAlumno, notaMedia);
 		// Llama al unico constructor de alumno en la clase Alumno
 		

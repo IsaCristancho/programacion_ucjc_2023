@@ -51,6 +51,7 @@ public class GestionColegios {
 		y le pasas la cantidad de alumnos para poder rellenar toda la infromacion de todos los alumnos */
 		
 		for (int i=0; i<numeroAlumnos; i++) { // Bucle for para que pida la informacion de todos los alumnos
+			System.out.println("===== Informacion de alumno #"+ (i+1) + " =====");
 			Alumno alumno = UtilsColegio.crearAlumno(); /* Se llama al metodo crear alumno, ya que es el que 
 			pide toda la informacion*/
 			alumnos[i] = alumno; /* Aqui guarda a alumno (su informacion) en la posicion del array alumnos (la que
@@ -58,6 +59,7 @@ public class GestionColegios {
 			
 		}
 		
+		System.out.println("===== Proceso de inscripcion =====");
 		/* Proceso de inscripcion
 		Llama al metodo para que se ejecute */
 		asignacion(colegio, alumnos);
