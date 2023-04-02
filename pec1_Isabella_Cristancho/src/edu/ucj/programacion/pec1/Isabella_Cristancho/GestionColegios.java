@@ -76,4 +76,11 @@ public class GestionColegios {
 			
 		}
 	}
+	
+	/* GitHub Isabella Cristancho
+	 * 
+	 * https://github.com/IsaCristancho/programacion_ucjc_2023.git
+	 * 
+	 */
+	
 }
